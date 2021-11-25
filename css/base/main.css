@@ -327,6 +327,10 @@ body, html {
   color: black;
 }
 
+.aligner {
+  text-align: center;
+}
+
 .heroImg {
   max-width: 100%;
   max-height: 32rem;
@@ -394,14 +398,30 @@ body, html {
   opacity: 0;
 }
 
+.entry {
+  display: grid;
+}
+@media (min-width: 64rem) {
+  .entry {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+  }
+}
+
 .submenus {
   display: grid;
 }
 @media (min-width: 64rem) {
   .submenus {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2);
+    grid-template-columns: 300px 1fr;
     column-gap: 1rem;
   }
+}
+
+.imgflex {
+  display: block;
+  margin: 0 auto;
 }
 
 .submenu {

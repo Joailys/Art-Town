@@ -17,6 +17,8 @@
       color: black;
     }
   }
+.aligner{
+text-align: center}
   
   .heroImg {
     max-width: 100%;
@@ -31,7 +33,7 @@
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
-  
+
     &__header {
       padding: 1rem 2rem 0 1rem;
       display: flex;
@@ -96,16 +98,33 @@
     }
   }
   
-  .submenus {
+  .entry {
     display: grid;
-  
+
     @media (min-width:64rem) {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(1,1fr);
       column-gap: 1rem;
     }
   }
-  
-  .submenu {
+
+.submenus {
+  display: grid;
+
+  @media (min-width:64rem) {
+    grid-template-columns: repeat(2);
+    grid-template-columns: 300px 1fr;
+    column-gap: 1rem;
+  }
+}
+
+.imgflex{
+  display: block;
+  margin: 0 auto ;
+
+}
+
+
+.submenu {
     max-width: 100%;
     overflow: hidden;
     padding: 0 1rem;
